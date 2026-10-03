@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeployForge</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<main class="container">
+    <header>
+        <p class="eyebrow">DEPLOYFORGE · BAŞLANGIÇ SÜRÜMÜ</p>
+        <form th:action="@{/logout}" method="post"><button type="submit">Çıkış yap</button></form>
+    </header>
+    <h1>Koddan dağıtıma, tek bir kayıt.</h1>
+    <p>Proje iskeleti hazır. Henüz GitHub bağlantısı kurulmadı ve dağıtım yapılmadı.</p>
+    <section class="grid" aria-label="Özellik durumu">
+        <article class="card"><h2>Projeler</h2><p>Proje ekleme ekranı sonraki adımda geliştirilecek.</p></article>
+        <article class="card"><h2>Pipeline takibi</h2><p>Webhook ve çalışma bilgisi entegrasyonu planlanıyor.</p></article>
+        <article class="card"><h2>Dağıtımlar</h2><p>Hedef sunucu ve dağıtım akışı henüz yapılandırılmadı.</p></article>
+    </section>
+    <section class="card"><h2>Analiz için henüz veri yok</h2><p>Başarı oranları ve süreler, gerçek çalışmalardan sonra hesaplanacak.</p></section>
+</main>
+</body>
+</html>

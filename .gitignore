@@ -1,0 +1,52 @@
+# Yerel ortam ayarları ve gizli bilgiler
+.env
+.env.*
+!/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_ed25519
+
+# Derleme çıktıları ve geçici çalışma dosyaları
+target/
+build/
+out/
+/dist/
+/work/
+*.class
+*.log
+*.hprof
+*.zip
+/docs/demo/surefire-summary.txt
+
+# IDE dosyaları
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Yalnızca kök README.md GitHub'a gönderilir; diğer Markdown belgeleri yerelde kalır.
+*.[mM][dD]
+!/README.md
+
+# Maven Wrapper, .github iş akışları, kaynak kod ve yapılandırmalar takip edilir.

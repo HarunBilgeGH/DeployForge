@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giriş · DeployForge</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<main class="card login">
+    <p class="eyebrow">DEPLOYFORGE</p>
+    <h1>Yönetim paneline giriş</h1>
+    <p th:if="${param.error}" role="alert">Kullanıcı adı veya parola hatalı.</p>
+    <p th:if="${param.logout}">Oturum kapatıldı.</p>
+    <form th:action="@{/login}" method="post">
+        <label for="username">Kullanıcı adı</label>
+        <input id="username" name="username" autocomplete="username" required>
+        <label for="password">Parola</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <button type="submit">Giriş yap</button>
+    </form>
+</main>
+</body>
+</html>
